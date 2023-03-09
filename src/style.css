@@ -1,0 +1,20 @@
+/*
+* File: style.css
+* Author: Plesovszki István
+* Copyright: 2023, Plesovszki István
+* Group: Szoft I-2-N
+* Date: 2023-03-09
+* Github: https://github.com/PlesovszkiIstvan/
+* Licenc: GNU GPL
+*/
+
+#about{
+    background-color: aqua;
+    border-top: 3px solid gold;
+    position: fixed;
+    width: 600px;
+    text-align: center;
+    top: 130px;
+    right: -141px;
+    transform: rotate(45deg);
+}
