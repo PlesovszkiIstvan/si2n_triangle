@@ -13,11 +13,15 @@ var heightInput = document.querySelector('#height');
 var areaInput = document.querySelector('#area');
 var calcButton = document.querySelector('#calcButton');
 
-calcButton.addEventListener('click', () => {
+if (calcButton){
+    calcButton.addEventListener('click', () => {
     workInput();
 });
+}
+
 
 function workInput() {
+    let res = chechInput(baseInput);
     let base = Number(baseInput.value);
     let height = Number(heightInput.value);
     let area = calcTriangleArea(base,height);
@@ -26,4 +30,9 @@ function workInput() {
 
 function calcTriangleArea(base, height) {
     return base * height / 2;
+}
+
+function chechInput(input){
+    let res = input.match(/^[0-9]/);
+    console.log(res);
 }
